@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B31933AA15BDC77000F2FA51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31933A915BDC77000F2FA51 /* UIKit.framework */; };
+		B31933AC15BDC77000F2FA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31933AB15BDC77000F2FA51 /* Foundation.framework */; };
+		B31933AE15BDC77000F2FA51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31933AD15BDC77000F2FA51 /* CoreGraphics.framework */; };
+		B31933B415BDC77000F2FA51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B31933B215BDC77000F2FA51 /* InfoPlist.strings */; };
+		B31933B615BDC77000F2FA51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933B515BDC77000F2FA51 /* main.m */; };
+		B31933BA15BDC77000F2FA51 /* RMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933B915BDC77000F2FA51 /* RMSAppDelegate.m */; };
+		B31933BD15BDC77000F2FA51 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31933BB15BDC77000F2FA51 /* MainStoryboard_iPhone.storyboard */; };
+		B31933C015BDC77000F2FA51 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31933BE15BDC77000F2FA51 /* MainStoryboard_iPad.storyboard */; };
+		B31933C315BDC77000F2FA51 /* RMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933C215BDC77000F2FA51 /* RMSViewController.m */; };
+		B31933CB15BDC77100F2FA51 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31933CA15BDC77100F2FA51 /* SenTestingKit.framework */; };
+		B31933CC15BDC77100F2FA51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31933A915BDC77000F2FA51 /* UIKit.framework */; };
+		B31933CD15BDC77100F2FA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31933AB15BDC77000F2FA51 /* Foundation.framework */; };
+		B31933D515BDC77100F2FA51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B31933D315BDC77100F2FA51 /* InfoPlist.strings */; };
+		B31933D815BDC77100F2FA51 /* GoFishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933D715BDC77100F2FA51 /* GoFishTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B31933CE15BDC77100F2FA51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B319339C15BDC77000F2FA51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B31933A415BDC77000F2FA51;
+			remoteInfo = GoFish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B31933A515BDC77000F2FA51 /* GoFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31933A915BDC77000F2FA51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B31933AB15BDC77000F2FA51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B31933AD15BDC77000F2FA51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B31933B115BDC77000F2FA51 /* GoFish-Info.plist */ = {isa = PBXFileReference; path = "GoFish-Info.plist"; sourceTree = "<group>"; };
+		B31933B315BDC77000F2FA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B31933B515BDC77000F2FA51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B31933B715BDC77000F2FA51 /* GoFish-Prefix.pch */ = {isa = PBXFileReference; path = "GoFish-Prefix.pch"; sourceTree = "<group>"; };
+		B31933B815BDC77000F2FA51 /* RMSAppDelegate.h */ = {isa = PBXFileReference; path = RMSAppDelegate.h; sourceTree = "<group>"; };
+		B31933B915BDC77000F2FA51 /* RMSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSAppDelegate.m; sourceTree = "<group>"; };
+		B31933BC15BDC77000F2FA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B31933BF15BDC77000F2FA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B31933C115BDC77000F2FA51 /* RMSViewController.h */ = {isa = PBXFileReference; path = RMSViewController.h; sourceTree = "<group>"; };
+		B31933C215BDC77000F2FA51 /* RMSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSViewController.m; sourceTree = "<group>"; };
+		B31933C915BDC77100F2FA51 /* GoFishTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoFishTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31933CA15BDC77100F2FA51 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B31933D215BDC77100F2FA51 /* GoFishTests-Info.plist */ = {isa = PBXFileReference; path = "GoFishTests-Info.plist"; sourceTree = "<group>"; };
+		B31933D415BDC77100F2FA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B31933D615BDC77100F2FA51 /* GoFishTests.h */ = {isa = PBXFileReference; path = GoFishTests.h; sourceTree = "<group>"; };
+		B31933D715BDC77100F2FA51 /* GoFishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoFishTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B31933A215BDC77000F2FA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31933AA15BDC77000F2FA51 /* UIKit.framework in Frameworks */,
+				B31933AC15BDC77000F2FA51 /* Foundation.framework in Frameworks */,
+				B31933AE15BDC77000F2FA51 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31933C515BDC77100F2FA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31933CB15BDC77100F2FA51 /* SenTestingKit.framework in Frameworks */,
+				B31933CC15BDC77100F2FA51 /* UIKit.framework in Frameworks */,
+				B31933CD15BDC77100F2FA51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B319339A15BDC77000F2FA51 = {
+			isa = PBXGroup;
+			children = (
+				B31933AF15BDC77000F2FA51 /* GoFish */,
+				B31933D015BDC77100F2FA51 /* GoFishTests */,
+				B31933A815BDC77000F2FA51 /* Frameworks */,
+				B31933A615BDC77000F2FA51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B31933A615BDC77000F2FA51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B31933A515BDC77000F2FA51 /* GoFish.app */,
+				B31933C915BDC77100F2FA51 /* GoFishTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B31933A815BDC77000F2FA51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B31933A915BDC77000F2FA51 /* UIKit.framework */,
+				B31933AB15BDC77000F2FA51 /* Foundation.framework */,
+				B31933AD15BDC77000F2FA51 /* CoreGraphics.framework */,
+				B31933CA15BDC77100F2FA51 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B31933AF15BDC77000F2FA51 /* GoFish */ = {
+			isa = PBXGroup;
+			children = (
+				B31933B815BDC77000F2FA51 /* RMSAppDelegate.h */,
+				B31933B915BDC77000F2FA51 /* RMSAppDelegate.m */,
+				B31933BB15BDC77000F2FA51 /* MainStoryboard_iPhone.storyboard */,
+				B31933BE15BDC77000F2FA51 /* MainStoryboard_iPad.storyboard */,
+				B31933C115BDC77000F2FA51 /* RMSViewController.h */,
+				B31933C215BDC77000F2FA51 /* RMSViewController.m */,
+				B31933B015BDC77000F2FA51 /* Supporting Files */,
+			);
+			path = GoFish;
+			sourceTree = "<group>";
+		};
+		B31933B015BDC77000F2FA51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B31933B115BDC77000F2FA51 /* GoFish-Info.plist */,
+				B31933B215BDC77000F2FA51 /* InfoPlist.strings */,
+				B31933B515BDC77000F2FA51 /* main.m */,
+				B31933B715BDC77000F2FA51 /* GoFish-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B31933D015BDC77100F2FA51 /* GoFishTests */ = {
+			isa = PBXGroup;
+			children = (
+				B31933D615BDC77100F2FA51 /* GoFishTests.h */,
+				B31933D715BDC77100F2FA51 /* GoFishTests.m */,
+				B31933D115BDC77100F2FA51 /* Supporting Files */,
+			);
+			path = GoFishTests;
+			sourceTree = "<group>";
+		};
+		B31933D115BDC77100F2FA51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B31933D215BDC77100F2FA51 /* GoFishTests-Info.plist */,
+				B31933D315BDC77100F2FA51 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B31933A415BDC77000F2FA51 /* GoFish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31933DB15BDC77100F2FA51 /* Build configuration list for PBXNativeTarget "GoFish" */;
+			buildPhases = (
+				B31933A115BDC77000F2FA51 /* Sources */,
+				B31933A215BDC77000F2FA51 /* Frameworks */,
+				B31933A315BDC77000F2FA51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoFish;
+			productName = GoFish;
+			productReference = B31933A515BDC77000F2FA51 /* GoFish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B31933C815BDC77100F2FA51 /* GoFishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31933DE15BDC77100F2FA51 /* Build configuration list for PBXNativeTarget "GoFishTests" */;
+			buildPhases = (
+				B31933C415BDC77100F2FA51 /* Sources */,
+				B31933C515BDC77100F2FA51 /* Frameworks */,
+				B31933C615BDC77100F2FA51 /* Resources */,
+				B31933C715BDC77100F2FA51 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B31933CF15BDC77100F2FA51 /* PBXTargetDependency */,
+			);
+			name = GoFishTests;
+			productName = GoFishTests;
+			productReference = B31933C915BDC77100F2FA51 /* GoFishTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B319339C15BDC77000F2FA51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RMS;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "RoleModel Software, Inc.";
+			};
+			buildConfigurationList = B319339F15BDC77000F2FA51 /* Build configuration list for PBXProject "GoFish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B319339A15BDC77000F2FA51;
+			productRefGroup = B31933A615BDC77000F2FA51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B31933A415BDC77000F2FA51 /* GoFish */,
+				B31933C815BDC77100F2FA51 /* GoFishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B31933A315BDC77000F2FA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31933B415BDC77000F2FA51 /* InfoPlist.strings in Resources */,
+				B31933BD15BDC77000F2FA51 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B31933C015BDC77000F2FA51 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31933C615BDC77100F2FA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31933D515BDC77100F2FA51 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B31933C715BDC77100F2FA51 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B31933A115BDC77000F2FA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31933B615BDC77000F2FA51 /* main.m in Sources */,
+				B31933BA15BDC77000F2FA51 /* RMSAppDelegate.m in Sources */,
+				B31933C315BDC77000F2FA51 /* RMSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31933C415BDC77100F2FA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31933D815BDC77100F2FA51 /* GoFishTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B31933CF15BDC77100F2FA51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B31933A415BDC77000F2FA51 /* GoFish */;
+			targetProxy = B31933CE15BDC77100F2FA51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B31933B215BDC77000F2FA51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B31933B315BDC77000F2FA51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B31933BB15BDC77000F2FA51 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B31933BC15BDC77000F2FA51 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B31933BE15BDC77000F2FA51 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B31933BF15BDC77000F2FA51 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B31933D315BDC77100F2FA51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B31933D415BDC77100F2FA51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B31933D915BDC77100F2FA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B31933DA15BDC77100F2FA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B31933DC15BDC77100F2FA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoFish/GoFish-Prefix.pch";
+				INFOPLIST_FILE = "GoFish/GoFish-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B31933DD15BDC77100F2FA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoFish/GoFish-Prefix.pch";
+				INFOPLIST_FILE = "GoFish/GoFish-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B31933DF15BDC77100F2FA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoFish.app/GoFish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoFish/GoFish-Prefix.pch";
+				INFOPLIST_FILE = "GoFishTests/GoFishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B31933E015BDC77100F2FA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoFish.app/GoFish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoFish/GoFish-Prefix.pch";
+				INFOPLIST_FILE = "GoFishTests/GoFishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B319339F15BDC77000F2FA51 /* Build configuration list for PBXProject "GoFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31933D915BDC77100F2FA51 /* Debug */,
+				B31933DA15BDC77100F2FA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B31933DB15BDC77100F2FA51 /* Build configuration list for PBXNativeTarget "GoFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31933DC15BDC77100F2FA51 /* Debug */,
+				B31933DD15BDC77100F2FA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B31933DE15BDC77100F2FA51 /* Build configuration list for PBXNativeTarget "GoFishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31933DF15BDC77100F2FA51 /* Debug */,
+				B31933E015BDC77100F2FA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B319339C15BDC77000F2FA51 /* Project object */;
+}
