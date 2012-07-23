@@ -20,7 +20,16 @@
 		B31933CC15BDC77100F2FA51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31933A915BDC77000F2FA51 /* UIKit.framework */; };
 		B31933CD15BDC77100F2FA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31933AB15BDC77000F2FA51 /* Foundation.framework */; };
 		B31933D515BDC77100F2FA51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B31933D315BDC77100F2FA51 /* InfoPlist.strings */; };
-		B31933D815BDC77100F2FA51 /* GoFishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933D715BDC77100F2FA51 /* GoFishTests.m */; };
+		B31933E315BDC84800F2FA51 /* RMSGoFishGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933E215BDC84800F2FA51 /* RMSGoFishGameTests.m */; };
+		B31933E615BDCA8500F2FA51 /* RMSGoFishGame.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933E515BDCA8500F2FA51 /* RMSGoFishGame.m */; };
+		B31933E715BDCA8500F2FA51 /* RMSGoFishGame.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933E515BDCA8500F2FA51 /* RMSGoFishGame.m */; };
+		B31933EA15BDD25800F2FA51 /* RMSGoFishPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933E915BDD25800F2FA51 /* RMSGoFishPlayer.m */; };
+		B31933EB15BDD25800F2FA51 /* RMSGoFishPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933E915BDD25800F2FA51 /* RMSGoFishPlayer.m */; };
+		B31933EE15BDD71B00F2FA51 /* RMSDeckOfCards.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933ED15BDD71B00F2FA51 /* RMSDeckOfCards.m */; };
+		B31933EF15BDD71B00F2FA51 /* RMSDeckOfCards.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933ED15BDD71B00F2FA51 /* RMSDeckOfCards.m */; };
+		B31933F215BDD86900F2FA51 /* RMSDeckOfCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933F115BDD86900F2FA51 /* RMSDeckOfCardsTests.m */; };
+		B31933F715BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933F615BDE1EF00F2FA51 /* RMSPlayingCard.m */; };
+		B31933F815BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933F615BDE1EF00F2FA51 /* RMSPlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +47,32 @@
 		B31933A915BDC77000F2FA51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B31933AB15BDC77000F2FA51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B31933AD15BDC77000F2FA51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B31933B115BDC77000F2FA51 /* GoFish-Info.plist */ = {isa = PBXFileReference; path = "GoFish-Info.plist"; sourceTree = "<group>"; };
+		B31933B115BDC77000F2FA51 /* GoFish-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoFish-Info.plist"; sourceTree = "<group>"; };
 		B31933B315BDC77000F2FA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B31933B515BDC77000F2FA51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B31933B715BDC77000F2FA51 /* GoFish-Prefix.pch */ = {isa = PBXFileReference; path = "GoFish-Prefix.pch"; sourceTree = "<group>"; };
-		B31933B815BDC77000F2FA51 /* RMSAppDelegate.h */ = {isa = PBXFileReference; path = RMSAppDelegate.h; sourceTree = "<group>"; };
+		B31933B715BDC77000F2FA51 /* GoFish-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoFish-Prefix.pch"; sourceTree = "<group>"; };
+		B31933B815BDC77000F2FA51 /* RMSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSAppDelegate.h; sourceTree = "<group>"; };
 		B31933B915BDC77000F2FA51 /* RMSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSAppDelegate.m; sourceTree = "<group>"; };
 		B31933BC15BDC77000F2FA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B31933BF15BDC77000F2FA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B31933C115BDC77000F2FA51 /* RMSViewController.h */ = {isa = PBXFileReference; path = RMSViewController.h; sourceTree = "<group>"; };
+		B31933C115BDC77000F2FA51 /* RMSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSViewController.h; sourceTree = "<group>"; };
 		B31933C215BDC77000F2FA51 /* RMSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSViewController.m; sourceTree = "<group>"; };
 		B31933C915BDC77100F2FA51 /* GoFishTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoFishTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31933CA15BDC77100F2FA51 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B31933D215BDC77100F2FA51 /* GoFishTests-Info.plist */ = {isa = PBXFileReference; path = "GoFishTests-Info.plist"; sourceTree = "<group>"; };
+		B31933D215BDC77100F2FA51 /* GoFishTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoFishTests-Info.plist"; sourceTree = "<group>"; };
 		B31933D415BDC77100F2FA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B31933D615BDC77100F2FA51 /* GoFishTests.h */ = {isa = PBXFileReference; path = GoFishTests.h; sourceTree = "<group>"; };
-		B31933D715BDC77100F2FA51 /* GoFishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoFishTests.m; sourceTree = "<group>"; };
+		B31933E115BDC84800F2FA51 /* RMSGoFishGameTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSGoFishGameTests.h; sourceTree = "<group>"; };
+		B31933E215BDC84800F2FA51 /* RMSGoFishGameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSGoFishGameTests.m; sourceTree = "<group>"; };
+		B31933E415BDCA8500F2FA51 /* RMSGoFishGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSGoFishGame.h; sourceTree = "<group>"; };
+		B31933E515BDCA8500F2FA51 /* RMSGoFishGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSGoFishGame.m; sourceTree = "<group>"; };
+		B31933E815BDD25800F2FA51 /* RMSGoFishPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSGoFishPlayer.h; sourceTree = "<group>"; };
+		B31933E915BDD25800F2FA51 /* RMSGoFishPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSGoFishPlayer.m; sourceTree = "<group>"; };
+		B31933EC15BDD71B00F2FA51 /* RMSDeckOfCards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDeckOfCards.h; sourceTree = "<group>"; };
+		B31933ED15BDD71B00F2FA51 /* RMSDeckOfCards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDeckOfCards.m; sourceTree = "<group>"; };
+		B31933F015BDD86900F2FA51 /* RMSDeckOfCardsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDeckOfCardsTests.h; sourceTree = "<group>"; };
+		B31933F115BDD86900F2FA51 /* RMSDeckOfCardsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDeckOfCardsTests.m; sourceTree = "<group>"; };
+		B31933F515BDE1EF00F2FA51 /* RMSPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSPlayingCard.h; sourceTree = "<group>"; };
+		B31933F615BDE1EF00F2FA51 /* RMSPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSPlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +132,17 @@
 		B31933AF15BDC77000F2FA51 /* GoFish */ = {
 			isa = PBXGroup;
 			children = (
-				B31933B815BDC77000F2FA51 /* RMSAppDelegate.h */,
-				B31933B915BDC77000F2FA51 /* RMSAppDelegate.m */,
-				B31933BB15BDC77000F2FA51 /* MainStoryboard_iPhone.storyboard */,
-				B31933BE15BDC77000F2FA51 /* MainStoryboard_iPad.storyboard */,
-				B31933C115BDC77000F2FA51 /* RMSViewController.h */,
-				B31933C215BDC77000F2FA51 /* RMSViewController.m */,
+				B31933F315BDDBFA00F2FA51 /* Startup */,
+				B31933F415BDDC0700F2FA51 /* UI */,
 				B31933B015BDC77000F2FA51 /* Supporting Files */,
+				B31933E415BDCA8500F2FA51 /* RMSGoFishGame.h */,
+				B31933E515BDCA8500F2FA51 /* RMSGoFishGame.m */,
+				B31933E815BDD25800F2FA51 /* RMSGoFishPlayer.h */,
+				B31933E915BDD25800F2FA51 /* RMSGoFishPlayer.m */,
+				B31933EC15BDD71B00F2FA51 /* RMSDeckOfCards.h */,
+				B31933ED15BDD71B00F2FA51 /* RMSDeckOfCards.m */,
+				B31933F515BDE1EF00F2FA51 /* RMSPlayingCard.h */,
+				B31933F615BDE1EF00F2FA51 /* RMSPlayingCard.m */,
 			);
 			path = GoFish;
 			sourceTree = "<group>";
@@ -138,9 +161,11 @@
 		B31933D015BDC77100F2FA51 /* GoFishTests */ = {
 			isa = PBXGroup;
 			children = (
-				B31933D615BDC77100F2FA51 /* GoFishTests.h */,
-				B31933D715BDC77100F2FA51 /* GoFishTests.m */,
 				B31933D115BDC77100F2FA51 /* Supporting Files */,
+				B31933E115BDC84800F2FA51 /* RMSGoFishGameTests.h */,
+				B31933E215BDC84800F2FA51 /* RMSGoFishGameTests.m */,
+				B31933F015BDD86900F2FA51 /* RMSDeckOfCardsTests.h */,
+				B31933F115BDD86900F2FA51 /* RMSDeckOfCardsTests.m */,
 			);
 			path = GoFishTests;
 			sourceTree = "<group>";
@@ -152,6 +177,26 @@
 				B31933D315BDC77100F2FA51 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B31933F315BDDBFA00F2FA51 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				B31933B815BDC77000F2FA51 /* RMSAppDelegate.h */,
+				B31933B915BDC77000F2FA51 /* RMSAppDelegate.m */,
+			);
+			name = Startup;
+			sourceTree = "<group>";
+		};
+		B31933F415BDDC0700F2FA51 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B31933BB15BDC77000F2FA51 /* MainStoryboard_iPhone.storyboard */,
+				B31933BE15BDC77000F2FA51 /* MainStoryboard_iPad.storyboard */,
+				B31933C115BDC77000F2FA51 /* RMSViewController.h */,
+				B31933C215BDC77000F2FA51 /* RMSViewController.m */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +311,10 @@
 				B31933B615BDC77000F2FA51 /* main.m in Sources */,
 				B31933BA15BDC77000F2FA51 /* RMSAppDelegate.m in Sources */,
 				B31933C315BDC77000F2FA51 /* RMSViewController.m in Sources */,
+				B31933E615BDCA8500F2FA51 /* RMSGoFishGame.m in Sources */,
+				B31933EA15BDD25800F2FA51 /* RMSGoFishPlayer.m in Sources */,
+				B31933EE15BDD71B00F2FA51 /* RMSDeckOfCards.m in Sources */,
+				B31933F715BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B31933D815BDC77100F2FA51 /* GoFishTests.m in Sources */,
+				B31933E315BDC84800F2FA51 /* RMSGoFishGameTests.m in Sources */,
+				B31933E715BDCA8500F2FA51 /* RMSGoFishGame.m in Sources */,
+				B31933EB15BDD25800F2FA51 /* RMSGoFishPlayer.m in Sources */,
+				B31933EF15BDD71B00F2FA51 /* RMSDeckOfCards.m in Sources */,
+				B31933F215BDD86900F2FA51 /* RMSDeckOfCardsTests.m in Sources */,
+				B31933F815BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
