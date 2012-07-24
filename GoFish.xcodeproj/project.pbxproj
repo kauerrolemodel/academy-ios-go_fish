@@ -30,6 +30,10 @@
 		B31933F215BDD86900F2FA51 /* RMSDeckOfCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933F115BDD86900F2FA51 /* RMSDeckOfCardsTests.m */; };
 		B31933F715BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933F615BDE1EF00F2FA51 /* RMSPlayingCard.m */; };
 		B31933F815BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933F615BDE1EF00F2FA51 /* RMSPlayingCard.m */; };
+		B31933FF15BED26B00F2FA51 /* RMSPlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31933FE15BED26B00F2FA51 /* RMSPlayingCardTests.m */; };
+		B319340315BED94500F2FA51 /* RMSGoFishPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B319340215BED94500F2FA51 /* RMSGoFishPlayerTests.m */; };
+		B319340615BEE62900F2FA51 /* RMSCardPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B319340515BEE62900F2FA51 /* RMSCardPlayer.m */; };
+		B319340715BEE62900F2FA51 /* RMSCardPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B319340515BEE62900F2FA51 /* RMSCardPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,13 @@
 		B31933F115BDD86900F2FA51 /* RMSDeckOfCardsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDeckOfCardsTests.m; sourceTree = "<group>"; };
 		B31933F515BDE1EF00F2FA51 /* RMSPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSPlayingCard.h; sourceTree = "<group>"; };
 		B31933F615BDE1EF00F2FA51 /* RMSPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSPlayingCard.m; sourceTree = "<group>"; };
+		B31933FD15BED26B00F2FA51 /* RMSPlayingCardTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSPlayingCardTests.h; sourceTree = "<group>"; };
+		B31933FE15BED26B00F2FA51 /* RMSPlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSPlayingCardTests.m; sourceTree = "<group>"; };
+		B319340115BED94500F2FA51 /* RMSGoFishPlayerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSGoFishPlayerTests.h; sourceTree = "<group>"; };
+		B319340215BED94500F2FA51 /* RMSGoFishPlayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSGoFishPlayerTests.m; sourceTree = "<group>"; };
+		B319340415BEE02D00F2FA51 /* RMSCardPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSCardPlayer.h; sourceTree = "<group>"; };
+		B319340515BEE62900F2FA51 /* RMSCardPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSCardPlayer.m; sourceTree = "<group>"; };
+		B319340815BEEB1D00F2FA51 /* RMSCardPlayerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSCardPlayerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +154,9 @@
 				B31933ED15BDD71B00F2FA51 /* RMSDeckOfCards.m */,
 				B31933F515BDE1EF00F2FA51 /* RMSPlayingCard.h */,
 				B31933F615BDE1EF00F2FA51 /* RMSPlayingCard.m */,
+				B319340415BEE02D00F2FA51 /* RMSCardPlayer.h */,
+				B319340515BEE62900F2FA51 /* RMSCardPlayer.m */,
+				B319340815BEEB1D00F2FA51 /* RMSCardPlayerDelegate.h */,
 			);
 			path = GoFish;
 			sourceTree = "<group>";
@@ -166,6 +180,10 @@
 				B31933E215BDC84800F2FA51 /* RMSGoFishGameTests.m */,
 				B31933F015BDD86900F2FA51 /* RMSDeckOfCardsTests.h */,
 				B31933F115BDD86900F2FA51 /* RMSDeckOfCardsTests.m */,
+				B31933FD15BED26B00F2FA51 /* RMSPlayingCardTests.h */,
+				B31933FE15BED26B00F2FA51 /* RMSPlayingCardTests.m */,
+				B319340115BED94500F2FA51 /* RMSGoFishPlayerTests.h */,
+				B319340215BED94500F2FA51 /* RMSGoFishPlayerTests.m */,
 			);
 			path = GoFishTests;
 			sourceTree = "<group>";
@@ -315,6 +333,7 @@
 				B31933EA15BDD25800F2FA51 /* RMSGoFishPlayer.m in Sources */,
 				B31933EE15BDD71B00F2FA51 /* RMSDeckOfCards.m in Sources */,
 				B31933F715BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */,
+				B319340615BEE62900F2FA51 /* RMSCardPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +347,9 @@
 				B31933EF15BDD71B00F2FA51 /* RMSDeckOfCards.m in Sources */,
 				B31933F215BDD86900F2FA51 /* RMSDeckOfCardsTests.m in Sources */,
 				B31933F815BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */,
+				B31933FF15BED26B00F2FA51 /* RMSPlayingCardTests.m in Sources */,
+				B319340315BED94500F2FA51 /* RMSGoFishPlayerTests.m in Sources */,
+				B319340715BEE62900F2FA51 /* RMSCardPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +521,7 @@
 				B31933DD15BDC77100F2FA51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B31933DE15BDC77100F2FA51 /* Build configuration list for PBXNativeTarget "GoFishTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +530,7 @@
 				B31933E015BDC77100F2FA51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

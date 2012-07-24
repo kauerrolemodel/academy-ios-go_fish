@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface RMSPlayingCard : NSObject
-@property (nonatomic, weak) NSString *rank;
-@property (nonatomic, weak) NSString *suit;
+@property (nonatomic, strong) NSString *rank;
+@property (nonatomic, strong) NSString *suit;
 
 + (NSArray *)ranks;
 + (NSArray *)suits;
++ (id)withRank: (NSString *)rank suit: (NSString *)suit;
 - (id)initWithRank: (NSString *)rank suit: (NSString *)suit;
 
 @end

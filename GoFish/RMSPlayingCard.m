@@ -20,6 +20,10 @@ static NSArray *_suits;
   _suits = [NSArray arrayWithObjects: @"Clubs", @"Hearts", @"Diamonds", @"Spades", nil];
 }
 
++ (id)withRank:(NSString *)rank suit:(NSString *)suit {
+  return [[self alloc] initWithRank:rank suit:suit];
+}
+
 - (id)initWithRank: (NSString *)rank suit: (NSString *)suit {
   self = [super init];
   if (self) {
@@ -35,6 +39,10 @@ static NSArray *_suits;
 
 + (NSArray *)suits {
   return _suits;
+}
+
+- (NSString *)description {
+  return [NSString stringWithFormat:@"%@-of-%@", self.rank, self.suit];
 }
 
 @end

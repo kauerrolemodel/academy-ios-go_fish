@@ -13,5 +13,6 @@
 
 - (NSUInteger)numberOfCards;
 - (RMSPlayingCard *)draw;
+- (void)deal: (NSUInteger)numberOfCards to: (NSArray *)players;
 
 @end

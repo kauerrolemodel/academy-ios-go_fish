@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RMSCardPlayer.h"
 
-@interface RMSGoFishPlayer : NSObject
+@interface RMSGoFishPlayer : RMSCardPlayer
+
+- (BOOL)ask: (RMSGoFishPlayer *)opponent for: (NSString *)rank; 
+- (NSArray *)cardsOfRank: (NSString *)rank;
 
 @end

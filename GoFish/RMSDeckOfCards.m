@@ -8,6 +8,7 @@
 
 #import "RMSDeckOfCards.h"
 #import "RMSPlayingCard.h"
+#import "RMSCardPlayerDelegate.h"
 
 @interface RMSDeckOfCards ()
 @property (nonatomic, strong, readonly) NSMutableArray *cards;
@@ -38,6 +39,14 @@
   RMSPlayingCard *card = [self.cards lastObject];
   [self.cards removeLastObject];
   return card;
+}
+
+- (void)deal:(NSUInteger)numberOfCards to:(NSArray *)players {
+  for (int i=0; i<numberOfCards; i++) {
+    for (id<RMSCardPlayerDelegate> player in players) {
+      [player addCard: [self draw]];
+    }
+  }
 }
          
 @end

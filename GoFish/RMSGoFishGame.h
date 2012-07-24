@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 @class RMSDeckOfCards;
+@class RMSGoFishPlayer;
 
 @interface RMSGoFishGame : NSObject
 @property (nonatomic, strong, readonly) NSArray *players;
 @property (nonatomic, strong, readonly) RMSDeckOfCards *deck;
+@property (nonatomic, strong, readonly) RMSGoFishPlayer *currentPlayer;
+
+- (void)deal;
+- (void)takeTurnAsking: (RMSGoFishPlayer *)opponent for: (NSString *)rank;
 @end
