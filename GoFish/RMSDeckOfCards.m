@@ -9,9 +9,10 @@
 #import "RMSDeckOfCards.h"
 #import "RMSPlayingCard.h"
 #import "RMSCardPlayerDelegate.h"
+#import "NSMutableArray+Shuffling.h"
 
 @interface RMSDeckOfCards ()
-@property (nonatomic, strong, readonly) NSMutableArray *cards;
+@property (nonatomic, strong, readwrite) NSMutableArray *cards;
 @end
 
 
@@ -39,6 +40,10 @@
   RMSPlayingCard *card = [self.cards lastObject];
   [self.cards removeLastObject];
   return card;
+}
+
+- (void)shuffle {
+  [self.cards shuffle];
 }
 
 - (void)deal:(NSUInteger)numberOfCards to:(NSArray *)players {

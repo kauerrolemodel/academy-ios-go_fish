@@ -12,6 +12,10 @@
 #import "RMSCardPlayerDelegate.h"
 #import "RMSCardPlayer.h"
 
+@interface RMSDeckOfCards (TestingMethods)
+@property (nonatomic, strong, readwrite) NSMutableArray *cards;
+@end
+
 @implementation RMSDeckOfCardsTests
 
 - (void)testCreation {
@@ -33,6 +37,15 @@
   [deck deal: 2 to: [NSArray arrayWithObjects: player1, player2, nil]];
   STAssertEquals(player1.numberOfCards, (NSUInteger)2, @"player1 has wrong number of cards");
   STAssertEquals(player2.numberOfCards, (NSUInteger)2, @"player2 has wrong number of cards");
+}
+
+- (void)testShuffle {
+  RMSDeckOfCards *deck = [RMSDeckOfCards new];
+  NSArray *originalOrder = [NSArray arrayWithArray:deck.cards];
+  [deck shuffle];
+  NSArray *newOrder = [NSArray arrayWithArray:deck.cards];
+  STAssertEquals([originalOrder count], [newOrder count], @"Should have same number of cards");
+  STAssertFalse([newOrder isEqual:originalOrder], @"order should have changed");
 }
 
 @end

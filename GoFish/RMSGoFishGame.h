@@ -17,4 +17,6 @@
 
 - (void)deal;
 - (void)takeTurnAsking: (RMSGoFishPlayer *)opponent for: (NSString *)rank;
+- (BOOL)isOver;
+
 @end

@@ -12,15 +12,22 @@
 
 @interface RMSGoFishPlayer ()
 @property (nonatomic, strong, readwrite) NSMutableArray *cards;
+@property (nonatomic, strong, readwrite) NSArray *books;
 @end
 
 @implementation RMSGoFishPlayer
+@synthesize books = _books;
 
 - (BOOL)ask:(RMSGoFishPlayer *)opponent for:(NSString *)rank {
   NSArray *cards = [opponent cardsOfRank: rank];
   [self.cards addObjectsFromArray:cards ];
   [opponent.cards removeObjectsInArray:cards ];
   return [cards count ] > 0;
+}
+
+- (void)addCard:(id)card {
+  [super addCard:card];
+  [self checkForBooks];
 }
 
 - (NSArray *)cardsOfRank: (NSString *)rank {
@@ -31,6 +38,29 @@
     }
   }
   return hits;
+}
+
+#pragma mark - Books
+
+- (NSArray *)books {
+  if (!_books) {
+    _books = [NSArray array];
+  }
+  return _books;
+}
+
+- (void)checkForBooks {
+    for (NSString *rank in [RMSPlayingCard ranks]) {
+        NSArray *potentialBook = [self cardsOfRank:rank];
+        if ([potentialBook count] == 4) {
+            [self addBook: potentialBook];
+            [self.cards removeObjectsInArray:potentialBook];
+        }
+    }
+}
+
+- (void)addBook: (id)book {
+  self.books = [self.books arrayByAddingObject:book];
 }
 
 

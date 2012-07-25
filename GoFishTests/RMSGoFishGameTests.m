@@ -6,6 +6,11 @@
 
 @interface RMSGoFishPlayer (TestingMethods)
 @property (nonatomic, strong, readwrite) NSMutableArray *cards;
+@property (nonatomic, strong, readwrite) NSArray *books;
+@end
+
+@interface RMSDeckOfCards (TestingMethods)
+@property (nonatomic, strong, readwrite) NSMutableArray *cards;
 @end
 
 @interface RMSGoFishGameTests ()
@@ -33,7 +38,7 @@
   }];
   RMSDeckOfCards *deck = game.deck;
   STAssertNotNil(deck, @"Missing Deck");
-  //Should test that deck is shuffled
+  STAssertFalse([[NSArray arrayWithArray:deck.cards] isEqual:[NSArray arrayWithArray:[[RMSDeckOfCards new] cards]]], @"Deck should not be in original order");
 }
 
 - (void)testDeal {
@@ -62,11 +67,29 @@
   STAssertEquals(game.currentPlayer, opponent, @"Should have switched turns");
   STAssertEquals(originalPlayer.numberOfCards, (NSUInteger)3, @"Original player should have picked up a card from the deck");
   STAssertEquals(opponent.numberOfCards, (NSUInteger)2, @"opponent hand should be unaffected");
-  
-  //check for books
-  //check for end game
-  
 }
+
+- (void)testIsOverWhenDeckIsEmpty {
+  game.deck.cards = [NSMutableArray array];
+  STAssertTrue([game isOver], @"Should be over when deck is empty");
+}
+
+- (void)testIsOverWhenPlayerIsOutOfCards {
+  game.currentPlayer.cards = [NSMutableArray array];
+  STAssertTrue([game isOver], @"Should be over when player is out of cards");
+}
+
+//- (void)testWinner {
+//  RMSGoFishPlayer *winningPlayer = game.currentPlayer;
+//  for (RMSGoFishPlayer *player in game.players) {
+//    STAssertEquals([player.books count], 0, @"All players should have no books at start");
+//  }
+//  for (NSString *suit in [RMSPlayingCard suits]) {
+//    [winningPlayer addCard:[RMSPlayingCard withRank:@"3" suit:suit]];
+//  }
+//  STAssertTrue([game isOver], @"Should be over when player is out of cards");
+//  STAssertEquals([game winner], winningPlayer, @"Player with book should be winner");
+//}
 
 - (void)testTakingTurnWithSuccess {
   RMSGoFishPlayer *originalPlayer = game.currentPlayer;
@@ -83,10 +106,6 @@
   STAssertEquals(game.currentPlayer, originalPlayer, @"Should have kept same players turn");
   STAssertEquals(originalPlayer.numberOfCards, (NSUInteger)3, @"Original player should have picked up a card from the opponent");
   STAssertEquals(opponent.numberOfCards, (NSUInteger)1, @"opponent hand should be missing the 4");
-  
-  //check for books
-  //check for end game
-  
 }
 
 

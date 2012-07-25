@@ -17,8 +17,15 @@
   STAssertEquals([player numberOfCards], (NSUInteger)0, @"Should not start with cards");
   [player addCard: [RMSPlayingCard withRank: @"2" suit: @"Clubs"] ];
   STAssertEquals([player numberOfCards], (NSUInteger)1, @"Should have a card");
+  STAssertEquals([player.books count], (NSUInteger)0, @"Should have no books");
   
   //check for books
+  [player addCard: [RMSPlayingCard withRank: @"2" suit: @"Hearts"] ];
+  [player addCard: [RMSPlayingCard withRank: @"2" suit: @"Diamonds"] ];
+  STAssertEquals([player.books count], (NSUInteger)0, @"Should have no books");
+  [player addCard: [RMSPlayingCard withRank: @"2" suit: @"Spades"] ];
+  STAssertEquals([player.books count], (NSUInteger)1, @"Should have a book of 2s");
+  STAssertEquals([player numberOfCards], (NSUInteger)0, @"Should have a book of 2s");
 }
 
 - (void)testAskPlayerForCard {
@@ -47,10 +54,10 @@
   [player addCard: threeOfClubs];
   [player addCard: threeOfHearts];
   [player addCard: fourOfClubs];
-  STAssertEquals([[player cardsOfRank:@"4"] count], (NSUInteger)1, @"should have only one 4");
-  STAssertEquals([[player cardsOfRank:@"3"] count], (NSUInteger)2, @"should have two 3s");
-//  NSArray *expected = [NSArray arrayWithObjects:threeOfClubs, threeOfHearts, nil];
-//  STAssertEqualObjects([player cardsForRank:@"3"], expected, @"should have two 3s");
+  NSArray *expected = [NSArray arrayWithObject:fourOfClubs];
+  STAssertEqualObjects([player cardsOfRank:@"4"], expected, @"should have only one 4");
+  expected = [NSArray arrayWithObjects:threeOfClubs, threeOfHearts, nil];
+  STAssertEqualObjects([player cardsOfRank:@"3"], expected, @"should have two 3s");
   
 }
 

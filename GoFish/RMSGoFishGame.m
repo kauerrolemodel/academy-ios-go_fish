@@ -21,9 +21,23 @@
                 [RMSGoFishPlayer new],
                 [RMSGoFishPlayer new],nil];
     _deck = [RMSDeckOfCards new];
+    [_deck shuffle];
     _currentPlayer = [_players objectAtIndex:0];
   }
   return self;
+}
+
+- (BOOL)isOver {
+  if ([self.deck numberOfCards] == 0) {
+    return YES;
+  } else {
+    for (RMSGoFishPlayer *player in self.players) {
+      if ([player numberOfCards] == 0) {
+        return YES;
+      }
+    }
+  }
+  return NO;
 }
 
 - (void)deal {

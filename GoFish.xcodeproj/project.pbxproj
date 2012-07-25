@@ -34,6 +34,9 @@
 		B319340315BED94500F2FA51 /* RMSGoFishPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B319340215BED94500F2FA51 /* RMSGoFishPlayerTests.m */; };
 		B319340615BEE62900F2FA51 /* RMSCardPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B319340515BEE62900F2FA51 /* RMSCardPlayer.m */; };
 		B319340715BEE62900F2FA51 /* RMSCardPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B319340515BEE62900F2FA51 /* RMSCardPlayer.m */; };
+		B390D38B15BFA26100FC46F8 /* NSMutableArray_ShufflingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B390D38A15BFA26100FC46F8 /* NSMutableArray_ShufflingTests.m */; };
+		B390D38F15BFA50F00FC46F8 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = B390D38E15BFA50F00FC46F8 /* NSMutableArray+Shuffling.m */; };
+		B390D39015BFA50F00FC46F8 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = B390D38E15BFA50F00FC46F8 /* NSMutableArray+Shuffling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,10 @@
 		B319340415BEE02D00F2FA51 /* RMSCardPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSCardPlayer.h; sourceTree = "<group>"; };
 		B319340515BEE62900F2FA51 /* RMSCardPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSCardPlayer.m; sourceTree = "<group>"; };
 		B319340815BEEB1D00F2FA51 /* RMSCardPlayerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSCardPlayerDelegate.h; sourceTree = "<group>"; };
+		B390D38915BFA26100FC46F8 /* NSMutableArray_ShufflingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_ShufflingTests.h; sourceTree = "<group>"; };
+		B390D38A15BFA26100FC46F8 /* NSMutableArray_ShufflingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_ShufflingTests.m; sourceTree = "<group>"; };
+		B390D38D15BFA50F00FC46F8 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		B390D38E15BFA50F00FC46F8 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +164,8 @@
 				B319340415BEE02D00F2FA51 /* RMSCardPlayer.h */,
 				B319340515BEE62900F2FA51 /* RMSCardPlayer.m */,
 				B319340815BEEB1D00F2FA51 /* RMSCardPlayerDelegate.h */,
+				B390D38D15BFA50F00FC46F8 /* NSMutableArray+Shuffling.h */,
+				B390D38E15BFA50F00FC46F8 /* NSMutableArray+Shuffling.m */,
 			);
 			path = GoFish;
 			sourceTree = "<group>";
@@ -184,6 +193,8 @@
 				B31933FE15BED26B00F2FA51 /* RMSPlayingCardTests.m */,
 				B319340115BED94500F2FA51 /* RMSGoFishPlayerTests.h */,
 				B319340215BED94500F2FA51 /* RMSGoFishPlayerTests.m */,
+				B390D38915BFA26100FC46F8 /* NSMutableArray_ShufflingTests.h */,
+				B390D38A15BFA26100FC46F8 /* NSMutableArray_ShufflingTests.m */,
 			);
 			path = GoFishTests;
 			sourceTree = "<group>";
@@ -334,6 +345,7 @@
 				B31933EE15BDD71B00F2FA51 /* RMSDeckOfCards.m in Sources */,
 				B31933F715BDE1EF00F2FA51 /* RMSPlayingCard.m in Sources */,
 				B319340615BEE62900F2FA51 /* RMSCardPlayer.m in Sources */,
+				B390D38F15BFA50F00FC46F8 /* NSMutableArray+Shuffling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +362,8 @@
 				B31933FF15BED26B00F2FA51 /* RMSPlayingCardTests.m in Sources */,
 				B319340315BED94500F2FA51 /* RMSGoFishPlayerTests.m in Sources */,
 				B319340715BEE62900F2FA51 /* RMSCardPlayer.m in Sources */,
+				B390D38B15BFA26100FC46F8 /* NSMutableArray_ShufflingTests.m in Sources */,
+				B390D39015BFA50F00FC46F8 /* NSMutableArray+Shuffling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

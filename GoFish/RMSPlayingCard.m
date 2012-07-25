@@ -45,4 +45,16 @@ static NSArray *_suits;
   return [NSString stringWithFormat:@"%@-of-%@", self.rank, self.suit];
 }
 
+- (BOOL)isEqual:(id)object {
+  return (self == object) || ([self isKindOfClass: [object class]] && [self isEqualToPlayingCard:object]);
+}
+
+- (BOOL)isEqualToPlayingCard: (RMSPlayingCard *)card {
+  return [self.rank isEqual:card.rank] && [self.suit isEqual:card.suit];
+}
+
+- (NSUInteger)hash {
+  return self.rank.hash ^ self.suit.hash;
+}
+
 @end

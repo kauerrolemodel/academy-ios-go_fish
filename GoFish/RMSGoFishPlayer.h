@@ -10,6 +10,7 @@
 #import "RMSCardPlayer.h"
 
 @interface RMSGoFishPlayer : RMSCardPlayer
+@property (nonatomic, strong, readonly) NSArray *books;
 
 - (BOOL)ask: (RMSGoFishPlayer *)opponent for: (NSString *)rank; 
 - (NSArray *)cardsOfRank: (NSString *)rank;
