@@ -10,5 +10,6 @@
 #import "RMSCardPlayerDelegate.h"
 
 @interface RMSCardPlayer : NSObject <RMSCardPlayerDelegate>
+@property (nonatomic, strong, readwrite) NSMutableArray *cards;
 
 @end

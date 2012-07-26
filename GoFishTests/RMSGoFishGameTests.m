@@ -19,16 +19,15 @@
 
 
 @implementation RMSGoFishGameTests
-@synthesize game;
 
 - (void)setUp {
   [super setUp];
-  game = [RMSGoFishGame new];
+  _game = [RMSGoFishGame new];
 }
 
 - (void)testGameCreation {
-  STAssertNotNil(game,@"Creation of GoFishGame failed");
-  NSArray *players = game.players;
+  STAssertNotNil(self.game,@"Creation of GoFishGame failed");
+  NSArray *players = self.game.players;
   STAssertEquals([players count], (NSUInteger)4, @"Incorrect number of players");
   for (RMSGoFishPlayer *player in players) {
     STAssertEqualObjects([player class], [RMSGoFishPlayer class], @"Wrong class of player");
@@ -36,25 +35,25 @@
   [players enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     STAssertEqualObjects([obj class], [RMSGoFishPlayer class], @"Wrong class of player");
   }];
-  RMSDeckOfCards *deck = game.deck;
+  RMSDeckOfCards *deck = self.game.deck;
   STAssertNotNil(deck, @"Missing Deck");
   STAssertFalse([[NSArray arrayWithArray:deck.cards] isEqual:[NSArray arrayWithArray:[[RMSDeckOfCards new] cards]]], @"Deck should not be in original order");
 }
 
 - (void)testDeal {
-  [game deal];
-  for (RMSGoFishPlayer *player in game.players) {
+  [self.game deal];
+  for (RMSGoFishPlayer *player in self.game.players) {
     STAssertEquals(player.numberOfCards, (NSUInteger)5, @"Wrong number of cards dealt to player");
   }
 }
 
 - (void)testCurrentPlayer {
-  STAssertEquals(game.currentPlayer, [game.players objectAtIndex: 0], @"Current player should be first");
+  STAssertEquals(self.game.currentPlayer, [self.game.players objectAtIndex: 0], @"Current player should be first");
 }
 
 - (void)testTakingTurnWithNoSuccess {
-  RMSGoFishPlayer *originalPlayer = game.currentPlayer;
-  RMSGoFishPlayer *opponent = [game.players lastObject];
+  RMSGoFishPlayer *originalPlayer = self.game.currentPlayer;
+  RMSGoFishPlayer *opponent = [self.game.players lastObject];
   originalPlayer.cards = [NSMutableArray arrayWithObjects:
                          [RMSPlayingCard withRank: @"3" suit: @"Clubs"], 
                          [RMSPlayingCard withRank: @"4" suit: @"Clubs"], 
@@ -63,20 +62,20 @@
                          [RMSPlayingCard withRank: @"2" suit: @"Hearts"], 
                          [RMSPlayingCard withRank: @"4" suit: @"Hearts"], 
                          nil ];
-  [game takeTurnAsking: opponent for: @"3" ];
-  STAssertEquals(game.currentPlayer, opponent, @"Should have switched turns");
+  [self.game takeTurnAsking: opponent for: @"3" ];
+  STAssertEquals(self.game.currentPlayer, opponent, @"Should have switched turns");
   STAssertEquals(originalPlayer.numberOfCards, (NSUInteger)3, @"Original player should have picked up a card from the deck");
   STAssertEquals(opponent.numberOfCards, (NSUInteger)2, @"opponent hand should be unaffected");
 }
 
 - (void)testIsOverWhenDeckIsEmpty {
-  game.deck.cards = [NSMutableArray array];
-  STAssertTrue([game isOver], @"Should be over when deck is empty");
+  self.game.deck.cards = [NSMutableArray array];
+  STAssertTrue([self.game isOver], @"Should be over when deck is empty");
 }
 
 - (void)testIsOverWhenPlayerIsOutOfCards {
-  game.currentPlayer.cards = [NSMutableArray array];
-  STAssertTrue([game isOver], @"Should be over when player is out of cards");
+  self.game.currentPlayer.cards = [NSMutableArray array];
+  STAssertTrue([self.game isOver], @"Should be over when player is out of cards");
 }
 
 //- (void)testWinner {
@@ -92,8 +91,8 @@
 //}
 
 - (void)testTakingTurnWithSuccess {
-  RMSGoFishPlayer *originalPlayer = game.currentPlayer;
-  RMSGoFishPlayer *opponent = [game.players lastObject];
+  RMSGoFishPlayer *originalPlayer = self.game.currentPlayer;
+  RMSGoFishPlayer *opponent = [self.game.players lastObject];
   originalPlayer.cards = [NSMutableArray arrayWithObjects:
                           [RMSPlayingCard withRank: @"3" suit: @"Clubs"], 
                           [RMSPlayingCard withRank: @"4" suit: @"Clubs"], 
@@ -102,8 +101,8 @@
                     [RMSPlayingCard withRank: @"2" suit: @"Hearts"], 
                     [RMSPlayingCard withRank: @"4" suit: @"Hearts"], 
                     nil ];
-  [game takeTurnAsking: opponent for: @"4" ];
-  STAssertEquals(game.currentPlayer, originalPlayer, @"Should have kept same players turn");
+  [self.game takeTurnAsking: opponent for: @"4" ];
+  STAssertEquals(self.game.currentPlayer, originalPlayer, @"Should have kept same players turn");
   STAssertEquals(originalPlayer.numberOfCards, (NSUInteger)3, @"Original player should have picked up a card from the opponent");
   STAssertEquals(opponent.numberOfCards, (NSUInteger)1, @"opponent hand should be missing the 4");
 }

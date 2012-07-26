@@ -11,7 +11,6 @@
 #import "RMSPlayingCard.h"
 
 @interface RMSGoFishPlayer ()
-@property (nonatomic, strong, readwrite) NSMutableArray *cards;
 @property (nonatomic, strong, readwrite) NSArray *books;
 @end
 

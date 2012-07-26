@@ -9,7 +9,6 @@
 #import "RMSCardPlayer.h"
 
 @interface RMSCardPlayer ()
-@property (nonatomic, strong, readwrite) NSMutableArray *cards;
 @end
 
 
